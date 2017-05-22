@@ -2,8 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import router from './router';
 // import router from './router'
-import VueRouter from 'vue-router'
 import VueResourse from 'vue-resource'
 import ElementUI from 'element-ui'; //引入饿了么框架
 import 'element-ui/lib/theme-default/index.css'
@@ -35,11 +35,13 @@ Vue.config.productionTip = true;
 //   ]
 // });
 //
-// //创建应用，创建路由器实例，挂载到#app的实例上
-// const app =new Vue ({
-//   router: router,
-//   render: h=>h(App)
-// }).$mount('#app');
+//创建应用，创建路由器实例，挂载到#app的实例上
+new Vue({
+  router,
+  store,
+  render: h => h(App)
+}).$mount('#app');
+
 
 /* eslint-disable no-new */
 // new Vue({
