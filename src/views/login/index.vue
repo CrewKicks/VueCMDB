@@ -7,7 +7,7 @@
       <el-form-item prop="username">
         <span class="svg-container"><wscn-icon-svg icon-class="jiedianyoujian"/></span>
         <el-input name="email" type="text"  autoComplete="on"
-                  placeholder="邮箱"></el-input>
+                  placeholder="用户名"></el-input>
       </el-form-item>
       <el-form-item prop="password">
         <span class="svg-container"><wscn-icon-svg icon-class="mima"/></span>
@@ -26,7 +26,14 @@
 </template>
 
 <script>
+  export default {
+    data() {
+        
+      },
+    methods: {
 
+    }
+  }
 </script>
 
 <style rel="stylesheet/scss" lang="scss">
