@@ -9,7 +9,6 @@ import ElementUI from 'element-ui'; //引入饿了么框架
 import 'element-ui/lib/theme-default/index.css'
 //开启DEBUG模式
 Vue.config.debug = true;
-Vue.use(VueRouter);
 Vue.use(VueResourse);
 Vue.use(ElementUI);
 Vue.config.productionTip = true;
@@ -38,7 +37,6 @@ Vue.config.productionTip = true;
 //创建应用，创建路由器实例，挂载到#app的实例上
 new Vue({
   router,
-  store,
   render: h => h(App)
 }).$mount('#app');
 
