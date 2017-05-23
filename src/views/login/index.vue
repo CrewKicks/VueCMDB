@@ -1,10 +1,10 @@
 <template>
   <div class="login-container">
-    <el-form autoComplete="on"  ref="loginForm" label-position="left"
+    <el-form autoComplete="on"  :model="loginForm" :rules="loginRules" ref="loginForm" label-position="left"
              label-width="0px"
              class="card-box login-form">
       <h3 class="title">系统登录</h3>
-      <el-form-item prop="email">
+      <el-form-item prop="username">
         <span class="svg-container"><wscn-icon-svg icon-class="jiedianyoujian"/></span>
         <el-input name="email" type="text"  autoComplete="on"
                   placeholder="邮箱"></el-input>
@@ -21,14 +21,7 @@
       </el-form-item>
       <div class='tips'>账号admin</div>
       <div class='tips'>密码adminadmin</div>
-      <router-link to="/sendpwd" class="forget-pwd">
-        忘记密码?(或首次登录)
-      </router-link>
     </el-form>
-    <el-dialog title="第三方验证">
-      邮箱登录成功,请选择第三方验证
-      <socialSign></socialSign>
-    </el-dialog>
   </div>
 </template>
 

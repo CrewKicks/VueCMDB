@@ -7,6 +7,9 @@ import router from './router';
 import VueResourse from 'vue-resource'
 import ElementUI from 'element-ui'; //引入饿了么框架
 import 'element-ui/lib/theme-default/index.css'
+import 'components/Icon-svg/index'; // 封装的svg组件
+import 'assets/iconfont/iconfont'; // iconfont 具体图标见https://github.com/PanJiaChen/vue-element-admin/wiki
+import 'styles/index.scss'; // 全局自定义的css样式
 //开启DEBUG模式
 Vue.config.debug = true;
 Vue.use(VueResourse);
