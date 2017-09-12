@@ -21,11 +21,21 @@
 </template>
 
 <script>
+var new =  ieee;
+
 export default {
   name: 'hello',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  }
+}
+export default {
+  name: 'hello',
+  data () {
+    return {
+      msg
     }
   }
 }
